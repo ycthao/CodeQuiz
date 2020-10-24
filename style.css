@@ -7,11 +7,19 @@ body {
 
 a:link, a:visited {
     color: #13524c;
+    text-decoration: none;
 }
 
 a:hover, a:active  {
     color: #FFFFFF;
+    text-decoration: none;
 }
+
+a:link#goBack {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 .link, .timer {
     position: absolute;
@@ -42,9 +50,9 @@ a:hover, a:active  {
     border-radius: 10px;
 }
 
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 button {
     background-color: #13524c;
@@ -61,3 +69,7 @@ button:hover {
     background-color: #13524c67;
 }
 
+#goBack   { 
+    color: #FFFFFF;
+    text-decoration: none;
+}
