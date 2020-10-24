@@ -2,15 +2,15 @@ body {
     background-color: #13524c67;
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #FFFFFF;
+    color: #13524c;
 }
 
 a:link, a:visited {
-    color: #FFFFFF;
+    color: #13524c;
 }
 
 a:hover, a:active  {
-    color: #ff8383;
+    color: #FFFFFF;
 }
 
 .link, .timer {
@@ -39,18 +39,18 @@ a:hover, a:active  {
 
 .instruction {
     background-color: #FFFFFF33;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
 }
 
 .start-quiz {
     display: none;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
 }
 
-#start {
-    background-color: #13524c67;
+button {
+    background-color: #13524c;
     color: #FFFFFF;
     cursor: pointer;
     border: 0;
@@ -59,3 +59,8 @@ a:hover, a:active  {
     margin: 10px;
     border-radius: 5px;
 }
+
+button:hover {
+    background-color: #13524c67;
+}
+
