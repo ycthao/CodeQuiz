@@ -42,6 +42,9 @@ a:hover, a:active  {
     border-radius: 10px;
 }
 
+.hide {
+    display: none;
+}
 
 button {
     background-color: #13524c;
