@@ -13,7 +13,7 @@
 <body>
     <!-- Hieghest link show on top left -->
     <div class="link">
-        <a href="highestscore.html">Highest Score</a>
+        <a href="highestscore.html">View Highest Score</a>
     </div>
     <!-- Timer shows on the same line highest score -->
     <div class="timer">
@@ -23,16 +23,31 @@
     <!-- container that have both the instruction and quiz questions -->
     <div class="container">
         <!-- Main container, diving quiz direction -->
-        <div class="instruction">
+        <div id="instruction" class="intial">
             <h1>Code Quiz</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
             <button id="start">Start Quiz</button>
         </div>
 
         <!-- Quiz goes here, place holder for quiz -->
-        <div class="start-quiz">
-            Place holder text for now... just for trial, need to delete once code is up and running.
+        <div id="start-quiz" class="hide">
+            <!-- Questions title goes here once it's called -->
+            <h1 id="question-title"></h1>
+            <!-- Mulitple choices goes here once it's called -->
+            <div id="choices" class="choices"></div>
+            Text holder for now...
         </div>
+
+        <!-- Form like div to save score -->
+        <div id="save-score" class="hide">
+            <h1>Game Over!</h1>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>Enter initials: 
+                <input type="text" id="initials" max="3" />
+            </p>
+            <button id="submit">Submit</button>
+        </div>
+
     </div>
 
     <!-- Adding JavaSript sheet -->
