@@ -1,0 +1,19 @@
+body {
+    background-color: #13524c67;
+}
+
+.link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
