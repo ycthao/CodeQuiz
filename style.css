@@ -1,5 +1,8 @@
 body {
     background-color: #13524c67;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
 }
 
 .link {
@@ -16,4 +19,11 @@ body {
     right: 10px;
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.instruction {
+    background-color: #FFFFFF33;
+    margin: 100px auto 0 auto;
+    max-width: 500px;
+
 }
