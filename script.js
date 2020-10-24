@@ -8,13 +8,6 @@ let timerEl = document.getElementById("time");
 let gameOverEl = document.getElementById("save-score");
 
 function startQuiz() {
-    // Call just to see if the on click work.  will delete once everything works
-    //alert("It works!");
-
-    // once start quiz is open
-    // need to hide quiz instruction and show questions
-    // also need to start timer
-    
     // Hide instruction when start button is clicked
     instructionEl.setAttribute("class", "hide");
 
@@ -23,22 +16,20 @@ function startQuiz() {
 
     // start timer
     timerId = setInterval(timeCountdown, 1000);
-
-
-
 }
 
 function timeCountdown() {
     // update time
     time--;
+    // show time
     timerEl.textContent = time;
 
+    // do this when time becomes 0
     if (time <= 0){
         timerEl.textContent = 0;
+        // Calling gameOver function to end game when time goes to 0
         gameOver();
     }
-
-
   }
 
 function gameOver()
