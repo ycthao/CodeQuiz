@@ -34,13 +34,28 @@ a:hover, a:active  {
     margin: 100px auto 0 auto;
     max-width: 550px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .instruction {
     background-color: #FFFFFF33;
-
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
 }
 
 .start-quiz {
     display: none;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+#start {
+    background-color: #13524c67;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 0;
+    font-size: 100%;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
 }
