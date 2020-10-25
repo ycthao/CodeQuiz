@@ -73,3 +73,23 @@ button:hover {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+ol {
+    padding-left: 0px;
+    width: auto;
+    max-height: 250px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    background-color:  #FFFFFF66;
+    list-style: decimal inside none;
+    text-align: left;
+    color: #13524c;
+}
+
+li:nth-child(odd) {
+    background-color: #FFFFFF33;
+  }
