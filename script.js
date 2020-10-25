@@ -143,11 +143,6 @@ function saveScore() {
     }
 }
 
-
-
-
-
-
 submitBtn.onclick = saveScore;
 
 startEl.onclick = startQuiz;
