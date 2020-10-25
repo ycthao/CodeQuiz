@@ -9,7 +9,8 @@ let timerEl = document.getElementById("time");
 let gameOverEl = document.getElementById("save-score");
 let choicesEl = document.getElementById("choices");
 let feedbackEl = document.getElementById("feedback");
-
+let initialsEl = document.getElementById("initials");
+let submitBtn = document.getElementById("submit");
 
 function startQuiz() {
     // Hide instruction when start button is clicked
@@ -119,8 +120,29 @@ function timeCountdown() {
     }
 }
     
+function saveScore() {
+    // get initial from input box
+    let initials = initialsEl.value.trim();
 
+    // validation to make sure something was enter
+    if (initials !== "") {
+        let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
+        // format new score object for current user
+        let newScore = {
+        score: time,
+        initials: initials
+        };
 
+        // save to localstorage
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+        // redirect to highestscore to show all the scores
+        window.location.href = "highestscore.html";
+    }
+}
+
+submitBtn.onclick = saveScore;
 
 startEl.onclick = startQuiz;
