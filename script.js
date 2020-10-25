@@ -73,20 +73,20 @@ function questionClick() {
         feedbackEl.textContent = "Correct!";
         }
         
-        // flash right/wrong feedback on page for half a second
-        feedbackEl.setAttribute("class", "feedback");
-        setTimeout(function() {
-            feedbackEl.setAttribute("class", "feedback hide");
-        }, 1000);
+    // flash right/wrong feedback on page for half a second
+    feedbackEl.setAttribute("class", "feedback");
+    setTimeout(function() {
+        feedbackEl.setAttribute("class", "feedback hide");
+    }, 1000);
         
-        // move to next question
-        currentQuestionIndex++;
+    // move to next question
+    currentQuestionIndex++;
         
-        // check if we've run out of questions
-        if (currentQuestionIndex === questions.length) {
-            gameOver();
+    // check if we've run out of questions
+    if (currentQuestionIndex === questions.length) {
+        gameOver();
         } else {
-            getQuestion();
+        getQuestion();
         }
 }
     
@@ -94,21 +94,15 @@ function gameOver()
 {
     // stop timer
     clearInterval(timerId);
-
-    // if time = 0  then this screen need to show
-    // to show game over screen, need to remove question
     
     // hide questions section
     quizQuestionEl.setAttribute("class", "hide");
-    
     
     let finalScoreEl = document.getElementById("final-score");
     finalScoreEl.textContent = time;
 
     // show gave over screen
     gameOverEl.removeAttribute("class");
-    
-    // if all answers are correct show this screen
 }
     
 function timeCountdown() {
